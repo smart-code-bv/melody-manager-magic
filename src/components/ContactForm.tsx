@@ -39,6 +39,8 @@ const INSTRUMENTS = [
   'trombone',
   'harp',
   'ukulele',
+  'vibraphone',
+  'accordion',
   'other'
 ] as const;
 

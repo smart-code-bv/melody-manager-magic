@@ -44,7 +44,25 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      instrument_enum:
+        | "piano"
+        | "guitar"
+        | "violin"
+        | "drums"
+        | "voice"
+        | "flute"
+        | "cello"
+        | "saxophone"
+        | "trumpet"
+        | "clarinet"
+        | "bass_guitar"
+        | "viola"
+        | "trombone"
+        | "harp"
+        | "ukulele"
+        | "vibraphone"
+        | "accordion"
+        | "other"
     }
     CompositeTypes: {
       [_ in never]: never
