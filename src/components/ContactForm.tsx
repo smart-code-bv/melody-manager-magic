@@ -79,11 +79,20 @@ export const ContactForm = () => {
     };
 
     try {
-      const { error } = await supabase
+      const { error: dbError } = await supabase
         .from('waitlist')
         .insert([data]);
 
-      if (error) throw error;
+      if (dbError) throw dbError;
+
+      // Send notification email
+      const { error: notificationError } = await supabase.functions.invoke('send-waitlist-notification', {
+        body: data
+      });
+
+      if (notificationError) {
+        console.error('Error sending notification:', notificationError);
+      }
 
       toast({
         title: t.success,
@@ -95,6 +104,7 @@ export const ContactForm = () => {
       setOtherInstruments('');
       setUserType('teacher');
     } catch (error) {
+      console.error('Error:', error);
       toast({
         title: "Error",
         description: "Something went wrong. Please try again.",
