@@ -83,7 +83,17 @@ export const ContactForm = () => {
         .from('waitlist')
         .insert([data]);
 
-      if (dbError) throw dbError;
+      if (dbError) {
+        if (dbError.code === '23505') { // Unique violation error code
+          toast({
+            title: "Already registered",
+            description: "This email is already on our waitlist. We'll contact you soon!",
+            variant: "default",
+          });
+          return;
+        }
+        throw dbError;
+      }
 
       // Send notification email
       const { error: notificationError } = await supabase.functions.invoke('send-waitlist-notification', {
