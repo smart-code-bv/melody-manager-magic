@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ContactForm } from "@/components/ContactForm";
 import { 
@@ -15,8 +14,13 @@ import {
   Gauge,
   ChevronRight
 } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/translations";
 
 const Index = () => {
+  const language = useLanguage();
+  const t = translations[language];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Gradient */}
@@ -29,12 +33,10 @@ const Index = () => {
             className="text-center space-y-8"
           >
             <h1 className="font-serif text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-              Your Music Teaching,{" "}
-              <span className="text-primary">Simplified</span>
+              {t.hero.title}
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Focus on what matters most - teaching music. Let our platform handle scheduling, 
-              payments, and student management while you create beautiful music.
+              {t.hero.subtitle}
             </p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -45,7 +47,7 @@ const Index = () => {
                 href="#contact" 
                 className="inline-flex items-center px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-full text-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
               >
-                Get Early Access
+                {t.hero.cta}
                 <ChevronRight className="ml-2 w-5 h-5" />
               </a>
             </motion.div>
@@ -65,11 +67,10 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-              Everything You Need to Teach Better
+              {t.features.title}
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Our comprehensive platform streamlines your teaching practice with powerful, 
-              easy-to-use tools.
+              {t.features.subtitle}
             </p>
           </div>
 
@@ -77,69 +78,39 @@ const Index = () => {
             {[
               {
                 icon: <Calendar className="w-10 h-10 text-primary" />,
-                title: "Smart Scheduling",
-                description: "Intelligent calendar management with automated reminders and conflict resolution.",
-                features: [
-                  "Season-based planning",
-                  "Multiple lesson types",
-                  "Calendar sync",
-                  "Make-up lesson tracking"
-                ]
+                title: t.features.scheduling.title,
+                description: t.features.scheduling.description,
+                features: t.features.scheduling.features
               },
               {
                 icon: <DollarSign className="w-10 h-10 text-primary" />,
-                title: "Automated Billing",
-                description: "Seamless payment processing and invoice management integrated with Moneybird.",
-                features: [
-                  "Custom payment schedules",
-                  "Automatic invoicing",
-                  "Payment tracking",
-                  "VAT calculation"
-                ]
+                title: t.features.billing.title,
+                description: t.features.billing.description,
+                features: t.features.billing.features
               },
               {
                 icon: <Users className="w-10 h-10 text-primary" />,
-                title: "Student Management",
-                description: "Comprehensive student profiles with progress tracking and attendance history.",
-                features: [
-                  "Detailed profiles",
-                  "Progress tracking",
-                  "Attendance records",
-                  "Family management"
-                ]
+                title: t.features.students.title,
+                description: t.features.students.description,
+                features: t.features.students.features
               },
               {
                 icon: <FileText className="w-10 h-10 text-primary" />,
-                title: "Learning Materials",
-                description: "Organize and share teaching resources efficiently with your students.",
-                features: [
-                  "File organization",
-                  "Resource sharing",
-                  "Practice tracking",
-                  "YouTube integration"
-                ]
+                title: t.features.materials.title,
+                description: t.features.materials.description,
+                features: t.features.materials.features
               },
               {
                 icon: <Bell className="w-10 h-10 text-primary" />,
-                title: "Smart Notifications",
-                description: "Keep everyone informed with automated, multi-channel notifications.",
-                features: [
-                  "Lesson reminders",
-                  "Payment alerts",
-                  "Schedule changes",
-                  "Practice reminders"
-                ]
+                title: t.features.notifications.title,
+                description: t.features.notifications.description,
+                features: t.features.notifications.features
               },
               {
                 icon: <Gauge className="w-10 h-10 text-primary" />,
-                title: "Analytics & Insights",
-                description: "Track progress and optimize your teaching practice with detailed analytics.",
-                features: [
-                  "Student progress",
-                  "Financial reports",
-                  "Attendance analysis",
-                  "Teaching metrics"
-                ]
+                title: t.features.analytics.title,
+                description: t.features.analytics.description,
+                features: t.features.analytics.features
               },
             ].map((feature, index) => (
               <motion.div
@@ -181,28 +152,27 @@ const Index = () => {
               className="space-y-6"
             >
               <h2 className="font-serif text-3xl md:text-4xl font-bold">
-                Seamless Communication
+                {t.communication.title}
               </h2>
               <p className="text-gray-600 text-lg">
-                Keep everyone in the loop with our integrated communication system.
-                Send updates, share materials, and manage conversations all in one place.
+                {t.communication.subtitle}
               </p>
               <div className="space-y-4">
                 {[
                   {
                     icon: <Mail className="w-6 h-6 text-primary" />,
-                    title: "Email Integration",
-                    description: "Automated lesson reminders and updates"
+                    title: t.communication.email.title,
+                    description: t.communication.email.description
                   },
                   {
                     icon: <MessageCircle className="w-6 h-6 text-primary" />,
-                    title: "In-App Messaging",
-                    description: "Direct communication with students and parents"
+                    title: t.communication.messaging.title,
+                    description: t.communication.messaging.description
                   },
                   {
                     icon: <Youtube className="w-6 h-6 text-primary" />,
-                    title: "Resource Sharing",
-                    description: "Easy sharing of learning materials and videos"
+                    title: t.communication.resources.title,
+                    description: t.communication.resources.description
                   }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-4">
@@ -246,11 +216,10 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-                Fair, Transparent Pricing
+                {t.pricing.title}
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                We believe in making music education accessible. That's why our platform 
-                is free for teachers and affordable for students.
+                {t.pricing.subtitle}
               </p>
             </motion.div>
           </div>
@@ -263,18 +232,11 @@ const Index = () => {
             className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
           >
             <div className="p-8 bg-gradient-to-br from-primary/5 to-purple-50 rounded-2xl border border-primary/10">
-              <h3 className="font-serif text-2xl font-bold mb-4">For Teachers</h3>
-              <p className="text-5xl font-bold text-primary mb-4">€0</p>
-              <p className="text-gray-600 mb-8">Forever free, no hidden costs</p>
+              <h3 className="font-serif text-2xl font-bold mb-4">{t.pricing.teachers.title}</h3>
+              <p className="text-5xl font-bold text-primary mb-4">{t.pricing.teachers.price}</p>
+              <p className="text-gray-600 mb-8">{t.pricing.teachers.description}</p>
               <ul className="space-y-4">
-                {[
-                  "Full access to all features",
-                  "Unlimited students",
-                  "Automated administration",
-                  "Priority support",
-                  "Regular platform updates",
-                  "Data export options"
-                ].map((feature, index) => (
+                {t.pricing.teachers.features.map((feature, index) => (
                   <li key={index} className="flex items-center space-x-3">
                     <ArrowRight className="w-5 h-5 text-primary flex-shrink-0" />
                     <span className="text-gray-600">{feature}</span>
@@ -284,18 +246,11 @@ const Index = () => {
             </div>
 
             <div className="p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200">
-              <h3 className="font-serif text-2xl font-bold mb-4">For Students</h3>
-              <p className="text-5xl font-bold text-primary mb-4">€2</p>
-              <p className="text-gray-600 mb-8">per month</p>
+              <h3 className="font-serif text-2xl font-bold mb-4">{t.pricing.students.title}</h3>
+              <p className="text-5xl font-bold text-primary mb-4">{t.pricing.students.price}</p>
+              <p className="text-gray-600 mb-8">{t.pricing.students.description}</p>
               <ul className="space-y-4">
-                {[
-                  "Easy lesson scheduling",
-                  "Access to learning materials",
-                  "Progress tracking",
-                  "Family plans available",
-                  "Direct communication",
-                  "Mobile app access"
-                ].map((feature, index) => (
+                {t.pricing.students.features.map((feature, index) => (
                   <li key={index} className="flex items-center space-x-3">
                     <ArrowRight className="w-5 h-5 text-primary flex-shrink-0" />
                     <span className="text-gray-600">{feature}</span>
@@ -318,11 +273,10 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-                Join the Waitlist
+                {t.contact.title}
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Be among the first to experience our platform. Sign up for early access 
-                and get exclusive updates on our launch.
+                {t.contact.subtitle}
               </p>
             </motion.div>
           </div>

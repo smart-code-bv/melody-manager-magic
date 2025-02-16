@@ -5,64 +5,92 @@ import { Input } from "./ui/input";
 import { Checkbox } from "./ui/checkbox";
 import { Button } from "./ui/button";
 import { useToast } from "./ui/use-toast";
+import { supabase } from "@/lib/supabase";
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/translations";
 
 export const ContactForm = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const language = useLanguage();
+  const t = translations[language].contact.form;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      instruments: formData.get('instruments') as string,
+      beta_tester: formData.get('beta') === 'on'
+    };
 
-    toast({
-      title: "Thanks for your interest!",
-      description: "We'll be in touch soon.",
-    });
+    try {
+      const { error } = await supabase
+        .from('waitlist')
+        .insert([data]);
 
-    setIsSubmitting(false);
-    (e.target as HTMLFormElement).reset();
+      if (error) throw error;
+
+      toast({
+        title: t.success,
+        description: t.successDetail,
+      });
+
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-md mx-auto">
       <div className="space-y-2">
-        <Label htmlFor="name">Name</Label>
+        <Label htmlFor="name">{t.name}</Label>
         <Input
           id="name"
-          placeholder="Your name"
+          name="name"
+          placeholder={t.name}
           required
           className="bg-white/50 backdrop-blur-sm"
         />
       </div>
       
       <div className="space-y-2">
-        <Label htmlFor="email">Email</Label>
+        <Label htmlFor="email">{t.email}</Label>
         <Input
           id="email"
+          name="email"
           type="email"
-          placeholder="your.email@example.com"
+          placeholder={t.email}
           required
           className="bg-white/50 backdrop-blur-sm"
         />
       </div>
       
       <div className="space-y-2">
-        <Label htmlFor="instruments">Instrument(s) you teach</Label>
+        <Label htmlFor="instruments">{t.instruments}</Label>
         <Input
           id="instruments"
-          placeholder="e.g., Piano, Guitar, Violin"
+          name="instruments"
+          placeholder={t.instruments}
           required
           className="bg-white/50 backdrop-blur-sm"
         />
       </div>
       
       <div className="flex items-center space-x-2">
-        <Checkbox id="beta" />
+        <Checkbox id="beta" name="beta" />
         <Label htmlFor="beta" className="text-sm font-normal">
-          I'm interested in beta testing
+          {t.beta}
         </Label>
       </div>
       
@@ -71,7 +99,7 @@ export const ContactForm = () => {
         className="w-full bg-primary hover:bg-primary-hover text-white"
         disabled={isSubmitting}
       >
-        {isSubmitting ? "Sending..." : "Join the Waitlist"}
+        {isSubmitting ? t.submitting : t.submit}
       </Button>
     </form>
   );
