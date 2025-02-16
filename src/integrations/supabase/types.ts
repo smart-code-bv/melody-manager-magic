@@ -15,24 +15,42 @@ export type Database = {
           created_at: string
           email: string
           id: string
-          instruments: string
+          instruments_list: string[]
+          lesson_city: string | null
           name: string
+          other_instruments: string | null
+          student_count: string | null
+          survey_consent: boolean | null
+          teacher_name: string | null
+          user_type: string
         }
         Insert: {
           beta_tester?: boolean | null
           created_at?: string
           email: string
           id?: string
-          instruments: string
+          instruments_list?: string[]
+          lesson_city?: string | null
           name: string
+          other_instruments?: string | null
+          student_count?: string | null
+          survey_consent?: boolean | null
+          teacher_name?: string | null
+          user_type?: string
         }
         Update: {
           beta_tester?: boolean | null
           created_at?: string
           email?: string
           id?: string
-          instruments?: string
+          instruments_list?: string[]
+          lesson_city?: string | null
           name?: string
+          other_instruments?: string | null
+          student_count?: string | null
+          survey_consent?: boolean | null
+          teacher_name?: string | null
+          user_type?: string
         }
         Relationships: []
       }
