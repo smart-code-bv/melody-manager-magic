@@ -46,7 +46,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     const emailResponse = await resend.emails.send({
       from: "Music Teacher Platform <onboarding@resend.dev>",
-      to: ["your-email@example.com"], // Replace with your notification email
+      to: [Deno.env.get("NOTIFICATION_EMAIL") || ""], // Use the environment variable
       subject: "New Waitlist Signup!",
       html: `
         <h1>New Waitlist Signup</h1>
