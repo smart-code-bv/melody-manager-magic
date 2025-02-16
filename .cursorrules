@@ -1,0 +1,134 @@
+# Melody Manager Magic - Project Rules
+
+## Project Management Rules
+
+- The documents mentioned below here are all in the documents folder
+- please keep it all there
+- this folder will keep on containing relevant information
+
+I want you to keep an active logfile (chatlog.md) that is meant to be read by an LLM that will be kept up to date with every response back from you. Before making any responses, you can refer back to this log as needed.
+Once you have the full plan, I want you to then make a Task list (tasks.md) of everything we need to brainstorm on to really figure out all the details and how to make this a $100mm app.
+Once we have a full plan and task list, let's start going through all the items on the task list and provide all the answers and exhaust ideas. As we go through and complete each of the tasks, you need to update a document (report.md) that records all the ideas and stuff that we come up with into a full length documented report.
+As you progress through responses, see if you need to ask me any questions first. If you getting more information from me before answeriing anything would lead to better results, always ask first until you have enough info to answer as best as possible.
+Longer responses are always better than shorter responses, so if need be, split your responses into smaller chunks that are put together over multiple responses.
+
+## Technical Development Rules
+
+### Core Development Principles
+1. Follow TypeScript best practices
+2. Implement proper error handling
+3. Ensure accessibility compliance
+4. Maintain consistent code style
+5. Write comprehensive tests
+6. Document all code changes
+
+### Component Development
+- Use functional components with TypeScript
+- Implement proper type definitions
+- Use React.FC for component types
+- Follow established component templates
+- Implement error boundaries
+
+### State Management
+- Use TanStack Query for server state
+- Implement proper loading states
+- Use TypeScript types for all queries
+- Implement optimistic updates
+
+### Database and Backend
+- Use type-safe Supabase queries
+- Implement proper error handling
+- Use realtime features appropriately
+- Keep sensitive operations server-side
+
+### UI Development
+- Use Radix UI for complex components
+- Implement proper accessibility
+- Follow Tailwind CSS patterns
+- Maintain consistent styling
+
+### Testing and Quality
+- Write unit tests for components
+- Implement integration tests
+- Test accessibility features
+- Maintain high test coverage
+
+### Music Platform Specific Rules
+
+#### Lesson Management
+- Implement proper scheduling validation
+- Handle timezone conversions correctly
+- Support recurring lesson patterns
+- Track lesson history and changes
+
+#### Student Progress
+- Use standardized assessment criteria
+- Support multimedia progress records
+- Implement progress visualization
+- Enable progress sharing
+
+#### Payment Processing
+- Implement secure payment handling
+- Support multiple payment methods
+- Generate proper invoices/receipts
+- Track payment history
+
+#### Resource Management
+- Support multiple file types
+- Implement proper file organization
+- Enable resource sharing
+- Track resource usage
+
+#### Communication
+- Support multiple message types
+- Enable attachments
+- Implement notifications
+- Track communication history
+
+### Documentation Requirements
+1. All components must include:
+   - Purpose
+   - Props documentation
+   - Usage examples
+   - Edge cases
+2. All API endpoints must document:
+   - Request/response formats
+   - Authentication requirements
+   - Error scenarios
+3. All database operations must include:
+   - Data model documentation
+   - Relationship diagrams
+   - Migration scripts
+
+### Performance Requirements
+1. Page load times:
+   - Initial load < 2s
+   - Subsequent loads < 1s
+2. API response times:
+   - Read operations < 200ms
+   - Write operations < 500ms
+3. Animation performance:
+   - 60fps for all animations
+   - No jank during interactions
+
+### Security Requirements
+1. Authentication:
+   - Implement proper session management
+   - Use secure password policies
+   - Support 2FA where appropriate
+2. Data protection:
+   - Encrypt sensitive data
+   - Implement proper access controls
+   - Regular security audits
+
+### Accessibility Requirements
+1. WCAG 2.1 AA compliance:
+   - Proper contrast ratios
+   - Keyboard navigation
+   - Screen reader support
+2. Mobile accessibility:
+   - Touch targets >= 44px
+   - Proper viewport handling
+   - Responsive design
+
+These rules should be followed in conjunction with the project management rules above. Regular reviews will ensure compliance and maintain code quality.
