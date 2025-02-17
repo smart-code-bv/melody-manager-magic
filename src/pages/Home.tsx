@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { ContactForm } from "@/components/ContactForm";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export default function Home() {
       </nav>
 
       <main className="container mx-auto px-4 py-16">
-        <div className="max-w-3xl mx-auto text-center space-y-8">
+        <div className="max-w-3xl mx-auto text-center space-y-8 mb-16">
           <h2 className="text-4xl font-bold tracking-tight">
             Streamline Your Music Teaching Practice
           </h2>
@@ -27,6 +28,16 @@ export default function Home() {
               Get Started
             </Button>
           </div>
+        </div>
+
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-4">Join the Waitlist</h2>
+            <p className="text-muted-foreground">
+              Be among the first to experience our revolutionary music teaching platform.
+            </p>
+          </div>
+          <ContactForm />
         </div>
       </main>
     </div>
