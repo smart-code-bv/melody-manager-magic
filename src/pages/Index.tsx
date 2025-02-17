@@ -229,30 +229,15 @@ const Index = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
+            className="max-w-2xl mx-auto"
           >
             <div className="p-8 bg-gradient-to-br from-primary/5 to-purple-50 rounded-2xl border border-primary/10">
-              <h3 className="font-serif text-2xl font-bold mb-4">{t.pricing.teachers.title}</h3>
-              <p className="text-5xl font-bold text-primary mb-4">{t.pricing.teachers.price}</p>
-              <p className="text-gray-600 mb-8">{t.pricing.teachers.description}</p>
+              <h3 className="font-serif text-2xl font-bold mb-2">{t.pricing.features.title}</h3>
+              <p className="text-gray-600 mb-6">{t.pricing.features.description}</p>
               <ul className="space-y-4">
-                {t.pricing.teachers.features.map((feature, index) => (
-                  <li key={index} className="flex items-center space-x-3">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-gray-600">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200">
-              <h3 className="font-serif text-2xl font-bold mb-4">{t.pricing.students.title}</h3>
-              <p className="text-5xl font-bold text-primary mb-4">{t.pricing.students.price}</p>
-              <p className="text-gray-600 mb-8">{t.pricing.students.description}</p>
-              <ul className="space-y-4">
-                {t.pricing.students.features.map((feature, index) => (
-                  <li key={index} className="flex items-center space-x-3">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0" />
+                {t.pricing.features.items.map((feature, index) => (
+                  <li key={index} className="flex items-start space-x-3">
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-gray-600">{feature}</span>
                   </li>
                 ))}

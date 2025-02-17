@@ -1,4 +1,3 @@
-
 export const translations = {
   en: {
     hero: {
@@ -70,49 +69,21 @@ export const translations = {
         ]
       }
     },
-    communication: {
-      title: "Seamless Communication",
-      subtitle: "Keep everyone in the loop with our integrated communication system. Send updates, share materials, and manage conversations all in one place.",
-      email: {
-        title: "Email Integration",
-        description: "Automated lesson reminders and updates"
-      },
-      messaging: {
-        title: "In-App Messaging",
-        description: "Direct communication with students and parents"
-      },
-      resources: {
-        title: "Resource Sharing",
-        description: "Easy sharing of learning materials and videos"
-      }
-    },
     pricing: {
-      title: "Fair, Transparent Pricing",
-      subtitle: "We believe in making music education accessible. That's why our platform is free for teachers and affordable for students.",
-      teachers: {
-        title: "For Teachers",
-        price: "€0",
-        description: "Forever free, no hidden costs",
-        features: [
-          "Full access to all features",
-          "Unlimited students",
+      title: "Simple, Teacher-First Pricing",
+      subtitle: "We believe in making music education accessible. Our platform is completely free for teachers, with a small platform fee included in student lesson fees.",
+      features: {
+        title: "Everything Included",
+        description: "One simple model, no hidden costs",
+        items: [
+          "Free access to all platform features",
+          "Unlimited lessons and students",
           "Automated administration",
           "Priority support",
           "Regular platform updates",
-          "Data export options"
-        ]
-      },
-      students: {
-        title: "For Students",
-        price: "€2",
-        description: "per month",
-        features: [
-          "Easy lesson scheduling",
-          "Access to learning materials",
-          "Progress tracking",
-          "Family plans available",
-          "Direct communication",
-          "Mobile app access"
+          "€2 monthly platform fee per student (automatically included in lesson fees)",
+          "Family discounts available",
+          "No setup or maintenance fees"
         ]
       }
     },
@@ -201,49 +172,21 @@ export const translations = {
         ]
       }
     },
-    communication: {
-      title: "Naadloze Communicatie",
-      subtitle: "Houd iedereen op de hoogte met ons geïntegreerde communicatiesysteem. Verstuur updates, deel materiaal en beheer gesprekken op één plek.",
-      email: {
-        title: "E-mail Integratie",
-        description: "Automatische lesherinneringen en updates"
-      },
-      messaging: {
-        title: "In-App Berichten",
-        description: "Directe communicatie met leerlingen en ouders"
-      },
-      resources: {
-        title: "Materiaal Delen",
-        description: "Eenvoudig delen van lesmateriaal en video's"
-      }
-    },
     pricing: {
-      title: "Eerlijke, Transparante Prijzen",
-      subtitle: "Wij geloven in toegankelijk muziekonderwijs. Daarom is ons platform gratis voor docenten en betaalbaar voor leerlingen.",
-      teachers: {
-        title: "Voor Docenten",
-        price: "€0",
-        description: "Voor altijd gratis, geen verborgen kosten",
-        features: [
-          "Volledige toegang tot alle functies",
-          "Onbeperkt aantal leerlingen",
+      title: "Eenvoudige, Docent-Gerichte Prijzen",
+      subtitle: "Wij geloven in toegankelijk muziekonderwijs. Ons platform is volledig gratis voor docenten, met een kleine platformbijdrage inbegrepen in het lesgeld.",
+      features: {
+        title: "Alles Inbegrepen",
+        description: "Één eenvoudig model, geen verborgen kosten",
+        items: [
+          "Gratis toegang tot alle platformfuncties",
+          "Onbeperkt lessen en leerlingen",
           "Geautomatiseerde administratie",
           "Priority support",
           "Regelmatige platform updates",
-          "Data export opties"
-        ]
-      },
-      students: {
-        title: "Voor Leerlingen",
-        price: "€2",
-        description: "per maand",
-        features: [
-          "Eenvoudige lesplanning",
-          "Toegang tot lesmateriaal",
-          "Voortgangsregistratie",
-          "Gezinsabonnementen beschikbaar",
-          "Directe communicatie",
-          "Mobiele app toegang"
+          "€2 maandelijkse platformbijdrage per leerling (automatisch inbegrepen in lesgeld)",
+          "Gezinskorting beschikbaar",
+          "Geen opstart- of onderhoudskosten"
         ]
       }
     },
