@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import Calendar from '@/components/calendar/Calendar'
 
 export const Dashboard: FC = () => {
     return (
@@ -28,13 +29,13 @@ export const Dashboard: FC = () => {
                 </div>
             </div>
 
-            {/* Recent Activity */}
+            {/* Calendar */}
             <div className="rounded-lg border">
-                <div className="p-4">
-                    <h2 className="text-lg font-semibold">Recent Activity</h2>
+                <div className="p-4 border-b">
+                    <h2 className="text-lg font-semibold">Schedule</h2>
                 </div>
                 <div className="p-4">
-                    <p className="text-sm text-muted-foreground">No recent activity</p>
+                    <Calendar />
                 </div>
             </div>
         </div>
