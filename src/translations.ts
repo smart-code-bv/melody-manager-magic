@@ -1,189 +1,88 @@
-
 export const translations = {
   en: {
     hero: {
-      title: "Transform Your Music Teaching Practice",
-      subtitle: "Streamline scheduling, billing, and student management with our all-in-one platform for music teachers",
-      cta: "Join the Waitlist"
+      title: "Unlock Your Musical Potential",
+      subtitle: "Find the perfect music teacher or student and start your musical journey today.",
+      cta: "Get Started",
     },
     features: {
-      title: "Everything You Need to Manage Your Music Teaching",
-      subtitle: "A comprehensive suite of tools designed specifically for music teachers",
-      scheduling: {
-        title: "Smart Scheduling",
-        description: "Effortlessly manage your teaching schedule",
-        features: [
-          "Automatic timezone handling",
-          "Recurring lessons",
-          "Calendar integration",
-          "Rescheduling tools"
-        ]
-      },
-      billing: {
-        title: "Seamless Billing",
-        description: "Handle payments and invoicing with ease",
-        features: [
-          "Automated invoicing",
-          "Multiple payment methods",
-          "Payment tracking",
-          "Financial reports"
-        ]
-      },
-      students: {
-        title: "Student Management",
-        description: "Keep track of all your students in one place",
-        features: [
-          "Student profiles",
-          "Progress tracking",
-          "Practice logs",
-          "Notes and feedback"
-        ]
-      },
-      materials: {
-        title: "Learning Materials",
-        description: "Organize and share teaching resources",
-        features: [
-          "Digital sheet music",
-          "Lesson materials",
-          "Resource library",
-          "Easy sharing"
-        ]
-      },
-      notifications: {
-        title: "Smart Notifications",
-        description: "Keep everyone informed automatically",
-        features: [
-          "Lesson reminders",
-          "Payment notifications",
-          "Schedule changes",
-          "Custom alerts"
-        ]
-      },
-      analytics: {
-        title: "Teaching Analytics",
-        description: "Gain insights into your teaching practice",
-        features: [
-          "Student progress",
-          "Income tracking",
-          "Teaching hours",
-          "Growth metrics"
-        ]
-      }
+      title: "Why Choose Us?",
+      subtitle: "We offer a range of features to make finding a teacher or student easier than ever.",
+      feature1Title: "Verified Profiles",
+      feature1Description: "All teachers and students are verified to ensure a safe and trustworthy community.",
+      feature2Title: "Advanced Search",
+      feature2Description: "Easily find teachers or students based on instrument, location, and experience.",
+      feature3Title: "Secure Communication",
+      feature3Description: "Communicate directly with teachers or students through our secure messaging platform.",
     },
     pricing: {
-      title: "Simple, Transparent Pricing",
-      subtitle: "Everything you need to grow your teaching practice",
-      features: {
-        title: "What's Included",
-        description: "Everything you need to manage your music teaching business",
-        items: [
-          "Unlimited students and lessons",
-          "Full scheduling system",
-          "Payment processing",
-          "Student progress tracking",
-          "Digital resources management",
-          "Communication tools",
-          "Mobile app access",
-          "Email and chat support"
-        ]
-      }
+      title: "Pricing Plans",
+      subtitle: "Choose the plan that's right for you.",
+      freePlanTitle: "Free",
+      freePlanDescription: "Perfect for getting started.",
+      freePlanPrice: "Free",
+      basicPlanTitle: "Basic",
+      basicPlanDescription: "Access to more features.",
+      basicPlanPrice: "$9.99/month",
+      premiumPlanTitle: "Premium",
+      premiumPlanDescription: "Unlock all features.",
+      premiumPlanPrice: "$19.99/month",
     },
     contact: {
       title: "Join the Waitlist",
-      subtitle: "Be the first to know when we launch and get exclusive early access"
+      subtitle: "Be the first to know when we launch and get exclusive early access",
+      form: {
+        name: "Name",
+        email: "Email",
+        beta: "I would like to be a beta tester",
+        submit: "Join Waitlist",
+        submitting: "Joining...",
+        success: "Thanks for joining!",
+        successDetail: "We'll keep you updated about our launch."
+      }
     }
   },
   nl: {
     hero: {
-      title: "Transformeer Je Muziekles Praktijk",
-      subtitle: "Stroomlijn planning, facturering en leerlingenbeheer met ons alles-in-één platform voor muziekdocenten",
-      cta: "Schrijf Je In"
+      title: "Ontgrendel Uw Muzikale Potentieel",
+      subtitle: "Vind de perfecte muziekdocent of student en begin vandaag nog aan uw muzikale reis.",
+      cta: "Aan de slag",
     },
     features: {
-      title: "Alles Wat Je Nodig Hebt om Je Muzieklessen te Beheren",
-      subtitle: "Een uitgebreide suite van tools speciaal ontworpen voor muziekdocenten",
-      scheduling: {
-        title: "Slimme Planning",
-        description: "Beheer moeiteloos je lesrooster",
-        features: [
-          "Automatische tijdzone aanpassing",
-          "Terugkerende lessen",
-          "Agenda integratie",
-          "Herplanningstools"
-        ]
-      },
-      billing: {
-        title: "Naadloze Facturering",
-        description: "Beheer betalingen en facturering met gemak",
-        features: [
-          "Geautomatiseerde facturering",
-          "Meerdere betaalmethoden",
-          "Betalingsoverzicht",
-          "Financiële rapportages"
-        ]
-      },
-      students: {
-        title: "Leerlingenbeheer",
-        description: "Houd al je leerlingen bij op één plek",
-        features: [
-          "Leerlingprofielen",
-          "Voortgangsbewaking",
-          "Oefen logboeken",
-          "Notities en feedback"
-        ]
-      },
-      materials: {
-        title: "Lesmateriaal",
-        description: "Organiseer en deel lesmateriaal",
-        features: [
-          "Digitale bladmuziek",
-          "Lesmaterialen",
-          "Bronnenbibliotheek",
-          "Eenvoudig delen"
-        ]
-      },
-      notifications: {
-        title: "Slimme Meldingen",
-        description: "Houd iedereen automatisch op de hoogte",
-        features: [
-          "Les herinneringen",
-          "Betalingsmeldingen",
-          "Roosterwijzigingen",
-          "Aangepaste alerts"
-        ]
-      },
-      analytics: {
-        title: "Les Analyses",
-        description: "Krijg inzicht in je lespraktijk",
-        features: [
-          "Leerlingvoortgang",
-          "Inkomsten tracking",
-          "Lesuren",
-          "Groei metrics"
-        ]
-      }
+      title: "Waarom Voor Ons Kiezen?",
+      subtitle: "Wij bieden een scala aan functies om het vinden van een docent of student gemakkelijker dan ooit te maken.",
+      feature1Title: "Geverifieerde Profielen",
+      feature1Description: "Alle docenten en studenten zijn geverifieerd om een veilige en betrouwbare gemeenschap te garanderen.",
+      feature2Title: "Geavanceerd Zoeken",
+      feature2Description: "Vind gemakkelijk docenten of studenten op basis van instrument, locatie en ervaring.",
+      feature3Title: "Veilige Communicatie",
+      feature3Description: "Communiceer rechtstreeks met docenten of studenten via ons veilige berichtenplatform.",
     },
     pricing: {
-      title: "Eenvoudige, Transparante Prijzen",
-      subtitle: "Alles wat je nodig hebt om je lespraktijk te laten groeien",
-      features: {
-        title: "Wat Is Inbegrepen",
-        description: "Alles wat je nodig hebt om je muziekonderneming te beheren",
-        items: [
-          "Onbeperkt aantal leerlingen en lessen",
-          "Volledig planningssysteem",
-          "Betalingsverwerking",
-          "Voortgangsbewaking leerlingen",
-          "Beheer van digitale bronnen",
-          "Communicatietools",
-          "Toegang tot mobiele app",
-          "E-mail en chat ondersteuning"
-        ]
-      }
+      title: "Prijzen",
+      subtitle: "Kies het plan dat bij u past.",
+      freePlanTitle: "Gratis",
+      freePlanDescription: "Perfect om mee te beginnen.",
+      freePlanPrice: "Gratis",
+      basicPlanTitle: "Basis",
+      basicPlanDescription: "Toegang tot meer functies.",
+      basicPlanPrice: "$9,99/maand",
+      premiumPlanTitle: "Premium",
+      premiumPlanDescription: "Ontgrendel alle functies.",
+      premiumPlanPrice: "$19,99/maand",
     },
     contact: {
       title: "Schrijf Je In",
-      subtitle: "Wees de eerste die hoort wanneer we lanceren en krijg exclusieve vroege toegang"
+      subtitle: "Wees de eerste die hoort wanneer we lanceren en krijg exclusieve vroege toegang",
+      form: {
+        name: "Naam",
+        email: "E-mail",
+        beta: "Ik wil graag een beta tester zijn",
+        submit: "Inschrijven",
+        submitting: "Bezig met inschrijven...",
+        success: "Bedankt voor je inschrijving!",
+        successDetail: "We houden je op de hoogte van onze lancering."
+      }
     }
   }
 } as const;
