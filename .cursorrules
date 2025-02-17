@@ -132,3 +132,8 @@ Longer responses are always better than shorter responses, so if need be, split 
    - Responsive design
 
 These rules should be followed in conjunction with the project management rules above. Regular reviews will ensure compliance and maintain code quality.
+
+### custom rules for the current state of the project
+1. leave the landingpage implementation intact.
+2. so don't edit src/pages/index.ts
+3. don't edit src/components/ContactForm.tsx
