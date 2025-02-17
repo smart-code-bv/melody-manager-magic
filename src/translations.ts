@@ -1,208 +1,189 @@
+
 export const translations = {
   en: {
     hero: {
-      title: "Your Music Teaching, Simplified",
-      subtitle: "Focus on what matters most - teaching music. Let our platform handle scheduling, payments, and student management while you create beautiful music.",
-      cta: "Get Early Access"
+      title: "Transform Your Music Teaching Practice",
+      subtitle: "Streamline scheduling, billing, and student management with our all-in-one platform for music teachers",
+      cta: "Join the Waitlist"
     },
     features: {
-      title: "Everything You Need to Teach Better",
-      subtitle: "Our comprehensive platform streamlines your teaching practice with powerful, easy-to-use tools.",
+      title: "Everything You Need to Manage Your Music Teaching",
+      subtitle: "A comprehensive suite of tools designed specifically for music teachers",
       scheduling: {
         title: "Smart Scheduling",
-        description: "Intelligent calendar management with automated reminders and conflict resolution.",
+        description: "Effortlessly manage your teaching schedule",
         features: [
-          "Season-based planning",
-          "Multiple lesson types",
-          "Calendar sync",
-          "Make-up lesson tracking"
+          "Automatic timezone handling",
+          "Recurring lessons",
+          "Calendar integration",
+          "Rescheduling tools"
         ]
       },
       billing: {
-        title: "Automated Billing",
-        description: "Seamless payment processing and invoice management integrated with Moneybird.",
+        title: "Seamless Billing",
+        description: "Handle payments and invoicing with ease",
         features: [
-          "Custom payment schedules",
-          "Automatic invoicing",
+          "Automated invoicing",
+          "Multiple payment methods",
           "Payment tracking",
-          "VAT calculation"
+          "Financial reports"
         ]
       },
       students: {
         title: "Student Management",
-        description: "Comprehensive student profiles with progress tracking and attendance history.",
+        description: "Keep track of all your students in one place",
         features: [
-          "Detailed profiles",
+          "Student profiles",
           "Progress tracking",
-          "Attendance records",
-          "Family management"
+          "Practice logs",
+          "Notes and feedback"
         ]
       },
       materials: {
         title: "Learning Materials",
-        description: "Organize and share teaching resources efficiently with your students.",
+        description: "Organize and share teaching resources",
         features: [
-          "File organization",
-          "Resource sharing",
-          "Practice tracking",
-          "YouTube integration"
+          "Digital sheet music",
+          "Lesson materials",
+          "Resource library",
+          "Easy sharing"
         ]
       },
       notifications: {
         title: "Smart Notifications",
-        description: "Keep everyone informed with automated, multi-channel notifications.",
+        description: "Keep everyone informed automatically",
         features: [
           "Lesson reminders",
-          "Payment alerts",
+          "Payment notifications",
           "Schedule changes",
-          "Practice reminders"
+          "Custom alerts"
         ]
       },
       analytics: {
-        title: "Analytics & Insights",
-        description: "Track progress and optimize your teaching practice with detailed analytics.",
+        title: "Teaching Analytics",
+        description: "Gain insights into your teaching practice",
         features: [
           "Student progress",
-          "Financial reports",
-          "Attendance analysis",
-          "Teaching metrics"
+          "Income tracking",
+          "Teaching hours",
+          "Growth metrics"
         ]
       }
     },
     pricing: {
-      title: "Simple, Teacher-First Pricing",
-      subtitle: "We believe in making music education accessible. Our platform is completely free for teachers, with a small platform fee included in student lesson fees.",
+      title: "Simple, Transparent Pricing",
+      subtitle: "Everything you need to grow your teaching practice",
       features: {
-        title: "Everything Included",
-        description: "One simple model, no hidden costs",
+        title: "What's Included",
+        description: "Everything you need to manage your music teaching business",
         items: [
-          "Free access to all platform features",
-          "Unlimited lessons and students",
-          "Automated administration",
-          "Priority support",
-          "Regular platform updates",
-          "€2 monthly platform fee per student (automatically included in lesson fees)",
-          "Family discounts available",
-          "No setup or maintenance fees"
+          "Unlimited students and lessons",
+          "Full scheduling system",
+          "Payment processing",
+          "Student progress tracking",
+          "Digital resources management",
+          "Communication tools",
+          "Mobile app access",
+          "Email and chat support"
         ]
       }
     },
     contact: {
       title: "Join the Waitlist",
-      subtitle: "Be among the first to experience our platform. Sign up for early access and get exclusive updates on our launch.",
-      form: {
-        name: "Name",
-        email: "Email",
-        instruments: "Instrument(s) you teach",
-        beta: "I'm interested in beta testing",
-        submit: "Join the Waitlist",
-        submitting: "Sending...",
-        success: "Thanks for your interest!",
-        successDetail: "We'll be in touch soon."
-      }
+      subtitle: "Be the first to know when we launch and get exclusive early access"
     }
   },
   nl: {
     hero: {
-      title: "Jouw Muziekles, Vereenvoudigd",
-      subtitle: "Focus op wat het belangrijkst is - muziek onderwijzen. Laat ons platform de planning, betalingen en leerlingenbeheer regelen terwijl jij mooie muziek maakt.",
-      cta: "Krijg Vroege Toegang"
+      title: "Transformeer Je Muziekles Praktijk",
+      subtitle: "Stroomlijn planning, facturering en leerlingenbeheer met ons alles-in-één platform voor muziekdocenten",
+      cta: "Schrijf Je In"
     },
     features: {
-      title: "Alles wat je nodig hebt om beter les te geven",
-      subtitle: "Ons uitgebreide platform stroomlijnt je lespraktijk met krachtige, gebruiksvriendelijke tools.",
+      title: "Alles Wat Je Nodig Hebt om Je Muzieklessen te Beheren",
+      subtitle: "Een uitgebreide suite van tools speciaal ontworpen voor muziekdocenten",
       scheduling: {
         title: "Slimme Planning",
-        description: "Intelligent agendabeheer met geautomatiseerde herinneringen en conflictoplossing.",
+        description: "Beheer moeiteloos je lesrooster",
         features: [
-          "Seizoensplanning",
-          "Meerdere lestypen",
-          "Kalendersynchronisatie",
-          "Inhaalles tracking"
+          "Automatische tijdzone aanpassing",
+          "Terugkerende lessen",
+          "Agenda integratie",
+          "Herplanningstools"
         ]
       },
       billing: {
-        title: "Geautomatiseerde Facturering",
-        description: "Naadloze betalingsverwerking en factuurbeheer geïntegreerd met Moneybird.",
+        title: "Naadloze Facturering",
+        description: "Beheer betalingen en facturering met gemak",
         features: [
-          "Aangepaste betalingsschema's",
-          "Automatische facturering",
-          "Betalingscontrole",
-          "BTW-berekening"
+          "Geautomatiseerde facturering",
+          "Meerdere betaalmethoden",
+          "Betalingsoverzicht",
+          "Financiële rapportages"
         ]
       },
       students: {
         title: "Leerlingenbeheer",
-        description: "Uitgebreide leerlingprofielen met voortgangsregistratie en aanwezigheidsgeschiedenis.",
+        description: "Houd al je leerlingen bij op één plek",
         features: [
-          "Gedetailleerde profielen",
-          "Voortgangsregistratie",
-          "Aanwezigheidsregistratie",
-          "Gezinsbeheer"
+          "Leerlingprofielen",
+          "Voortgangsbewaking",
+          "Oefen logboeken",
+          "Notities en feedback"
         ]
       },
       materials: {
         title: "Lesmateriaal",
-        description: "Organiseer en deel lesmateriaal efficiënt met je leerlingen.",
+        description: "Organiseer en deel lesmateriaal",
         features: [
-          "Bestandsorganisatie",
-          "Materiaal delen",
-          "Oefenregistratie",
-          "YouTube-integratie"
+          "Digitale bladmuziek",
+          "Lesmaterialen",
+          "Bronnenbibliotheek",
+          "Eenvoudig delen"
         ]
       },
       notifications: {
         title: "Slimme Meldingen",
-        description: "Houd iedereen op de hoogte met geautomatiseerde meldingen via meerdere kanalen.",
+        description: "Houd iedereen automatisch op de hoogte",
         features: [
-          "Lesherinneringen",
-          "Betalingswaarschuwingen",
+          "Les herinneringen",
+          "Betalingsmeldingen",
           "Roosterwijzigingen",
-          "Oefenherinneringen"
+          "Aangepaste alerts"
         ]
       },
       analytics: {
-        title: "Analyses & Inzichten",
-        description: "Volg voortgang en optimaliseer je lespraktijk met gedetailleerde analyses.",
+        title: "Les Analyses",
+        description: "Krijg inzicht in je lespraktijk",
         features: [
           "Leerlingvoortgang",
-          "Financiële rapportages",
-          "Aanwezigheidsanalyse",
-          "Lesmetrieken"
+          "Inkomsten tracking",
+          "Lesuren",
+          "Groei metrics"
         ]
       }
     },
     pricing: {
-      title: "Eenvoudige, Docent-Gerichte Prijzen",
-      subtitle: "Wij geloven in toegankelijk muziekonderwijs. Ons platform is volledig gratis voor docenten, met een kleine platformbijdrage inbegrepen in het lesgeld.",
+      title: "Eenvoudige, Transparante Prijzen",
+      subtitle: "Alles wat je nodig hebt om je lespraktijk te laten groeien",
       features: {
-        title: "Alles Inbegrepen",
-        description: "Één eenvoudig model, geen verborgen kosten",
+        title: "Wat Is Inbegrepen",
+        description: "Alles wat je nodig hebt om je muziekonderneming te beheren",
         items: [
-          "Gratis toegang tot alle platformfuncties",
-          "Onbeperkt lessen en leerlingen",
-          "Geautomatiseerde administratie",
-          "Priority support",
-          "Regelmatige platform updates",
-          "€2 maandelijkse platformbijdrage per leerling (automatisch inbegrepen in lesgeld)",
-          "Gezinskorting beschikbaar",
-          "Geen opstart- of onderhoudskosten"
+          "Onbeperkt aantal leerlingen en lessen",
+          "Volledig planningssysteem",
+          "Betalingsverwerking",
+          "Voortgangsbewaking leerlingen",
+          "Beheer van digitale bronnen",
+          "Communicatietools",
+          "Toegang tot mobiele app",
+          "E-mail en chat ondersteuning"
         ]
       }
     },
     contact: {
-      title: "Schrijf je in voor de Wachtlijst",
-      subtitle: "Wees een van de eersten die ons platform ervaren. Schrijf je in voor vroege toegang en ontvang exclusieve updates over onze lancering.",
-      form: {
-        name: "Naam",
-        email: "E-mail",
-        instruments: "Instrument(en) die je onderwijst",
-        beta: "Ik ben geïnteresseerd in beta testen",
-        submit: "Schrijf me in",
-        submitting: "Versturen...",
-        success: "Bedankt voor je interesse!",
-        successDetail: "We nemen binnenkort contact op."
-      }
+      title: "Schrijf Je In",
+      subtitle: "Wees de eerste die hoort wanneer we lanceren en krijg exclusieve vroege toegang"
     }
   }
-};
+} as const;
