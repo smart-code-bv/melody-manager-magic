@@ -1,9 +1,10 @@
+
 export const translations = {
   en: {
     hero: {
       title: "Unlock Your Musical Potential",
       subtitle: "Find the perfect music teacher or student and start your musical journey today.",
-      cta: "Get Started",
+      cta: "Get Started"
     },
     features: {
       title: "Why Choose Us?",
@@ -13,20 +14,7 @@ export const translations = {
       feature2Title: "Advanced Search",
       feature2Description: "Easily find teachers or students based on instrument, location, and experience.",
       feature3Title: "Secure Communication",
-      feature3Description: "Communicate directly with teachers or students through our secure messaging platform.",
-    },
-    pricing: {
-      title: "Pricing Plans",
-      subtitle: "Choose the plan that's right for you.",
-      freePlanTitle: "Free",
-      freePlanDescription: "Perfect for getting started.",
-      freePlanPrice: "Free",
-      basicPlanTitle: "Basic",
-      basicPlanDescription: "Access to more features.",
-      basicPlanPrice: "$9.99/month",
-      premiumPlanTitle: "Premium",
-      premiumPlanDescription: "Unlock all features.",
-      premiumPlanPrice: "$19.99/month",
+      feature3Description: "Communicate directly with teachers or students through our secure messaging platform."
     },
     contact: {
       title: "Join the Waitlist",
@@ -46,7 +34,7 @@ export const translations = {
     hero: {
       title: "Ontgrendel Uw Muzikale Potentieel",
       subtitle: "Vind de perfecte muziekdocent of student en begin vandaag nog aan uw muzikale reis.",
-      cta: "Aan de slag",
+      cta: "Aan de slag"
     },
     features: {
       title: "Waarom Voor Ons Kiezen?",
@@ -56,20 +44,7 @@ export const translations = {
       feature2Title: "Geavanceerd Zoeken",
       feature2Description: "Vind gemakkelijk docenten of studenten op basis van instrument, locatie en ervaring.",
       feature3Title: "Veilige Communicatie",
-      feature3Description: "Communiceer rechtstreeks met docenten of studenten via ons veilige berichtenplatform.",
-    },
-    pricing: {
-      title: "Prijzen",
-      subtitle: "Kies het plan dat bij u past.",
-      freePlanTitle: "Gratis",
-      freePlanDescription: "Perfect om mee te beginnen.",
-      freePlanPrice: "Gratis",
-      basicPlanTitle: "Basis",
-      basicPlanDescription: "Toegang tot meer functies.",
-      basicPlanPrice: "$9,99/maand",
-      premiumPlanTitle: "Premium",
-      premiumPlanDescription: "Ontgrendel alle functies.",
-      premiumPlanPrice: "$19,99/maand",
+      feature3Description: "Communiceer rechtstreeks met docenten of studenten via ons veilige berichtenplatform."
     },
     contact: {
       title: "Schrijf Je In",

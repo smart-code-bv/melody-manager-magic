@@ -4,15 +4,10 @@ import { ContactForm } from "@/components/ContactForm";
 import { 
   Music, 
   Users, 
-  Calendar, 
-  DollarSign, 
-  ArrowRight, 
-  Youtube,
+  Shield,
+  Search,
   MessageCircle,
-  Mail,
-  Bell,
-  FileText,
-  Gauge,
+  ArrowRight,
   ChevronRight
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
@@ -78,41 +73,20 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: <Calendar className="w-10 h-10 text-primary" />,
-                title: t.features.scheduling.title,
-                description: t.features.scheduling.description,
-                features: t.features.scheduling.features
+                icon: <Shield className="w-10 h-10 text-primary" />,
+                title: t.features.feature1Title,
+                description: t.features.feature1Description
               },
               {
-                icon: <DollarSign className="w-10 h-10 text-primary" />,
-                title: t.features.billing.title,
-                description: t.features.billing.description,
-                features: t.features.billing.features
+                icon: <Search className="w-10 h-10 text-primary" />,
+                title: t.features.feature2Title,
+                description: t.features.feature2Description
               },
               {
-                icon: <Users className="w-10 h-10 text-primary" />,
-                title: t.features.students.title,
-                description: t.features.students.description,
-                features: t.features.students.features
-              },
-              {
-                icon: <FileText className="w-10 h-10 text-primary" />,
-                title: t.features.materials.title,
-                description: t.features.materials.description,
-                features: t.features.materials.features
-              },
-              {
-                icon: <Bell className="w-10 h-10 text-primary" />,
-                title: t.features.notifications.title,
-                description: t.features.notifications.description,
-                features: t.features.notifications.features
-              },
-              {
-                icon: <Gauge className="w-10 h-10 text-primary" />,
-                title: t.features.analytics.title,
-                description: t.features.analytics.description,
-                features: t.features.analytics.features
-              },
+                icon: <MessageCircle className="w-10 h-10 text-primary" />,
+                title: t.features.feature3Title,
+                description: t.features.feature3Description
+              }
             ].map((feature, index) => (
               <motion.div
                 key={index}
@@ -127,59 +101,9 @@ const Index = () => {
                 </div>
                 <h3 className="mt-6 font-semibold text-2xl">{feature.title}</h3>
                 <p className="mt-3 text-gray-600">{feature.description}</p>
-                <ul className="mt-6 space-y-3">
-                  {feature.features.map((item, i) => (
-                    <li key={i} className="flex items-center space-x-2 text-gray-600">
-                      <ArrowRight className="w-4 h-4 text-primary" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="px-6 py-20">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-                {t.pricing.title}
-              </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                {t.pricing.subtitle}
-              </p>
-            </motion.div>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="max-w-2xl mx-auto"
-          >
-            <div className="p-8 bg-gradient-to-br from-primary/5 to-purple-50 rounded-2xl border border-primary/10">
-              <h3 className="font-serif text-2xl font-bold mb-2">{t.pricing.features.title}</h3>
-              <p className="text-gray-600 mb-6">{t.pricing.features.description}</p>
-              <ul className="space-y-4">
-                {t.pricing.features.items.map((feature, index) => (
-                  <li key={index} className="flex items-start space-x-3">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </motion.div>
         </div>
       </section>
 
