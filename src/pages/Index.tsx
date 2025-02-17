@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { ContactForm } from "@/components/ContactForm";
 import { 
@@ -136,71 +137,6 @@ const Index = () => {
                 </ul>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Communications Section */}
-      <section className="px-6 py-20 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <h2 className="font-serif text-3xl md:text-4xl font-bold">
-                {t.communication.title}
-              </h2>
-              <p className="text-gray-600 text-lg">
-                {t.communication.subtitle}
-              </p>
-              <div className="space-y-4">
-                {[
-                  {
-                    icon: <Mail className="w-6 h-6 text-primary" />,
-                    title: t.communication.email.title,
-                    description: t.communication.email.description
-                  },
-                  {
-                    icon: <MessageCircle className="w-6 h-6 text-primary" />,
-                    title: t.communication.messaging.title,
-                    description: t.communication.messaging.description
-                  },
-                  {
-                    icon: <Youtube className="w-6 h-6 text-primary" />,
-                    title: t.communication.resources.title,
-                    description: t.communication.resources.description
-                  }
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      {item.icon}
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-lg">{item.title}</h3>
-                      <p className="text-gray-600">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-purple-100 rounded-2xl p-8">
-                <div className="w-full h-full bg-white rounded-xl shadow-lg"></div>
-              </div>
-              <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-gradient-to-br from-indigo-100 to-primary/20 rounded-2xl p-6">
-                <div className="w-full h-full bg-white rounded-xl shadow-lg"></div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
