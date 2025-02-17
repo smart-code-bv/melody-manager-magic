@@ -1,17 +1,32 @@
 import { FC, ReactNode } from 'react'
 import { Navigate, Outlet } from 'react-router-dom'
+import { useAuth } from '@/lib/auth'
+import { Button } from '@/components/ui/button'
+import { LogOut } from 'lucide-react'
 
 interface AppLayoutProps {
     children?: ReactNode
 }
 
 export const AppLayout: FC<AppLayoutProps> = () => {
-    // TODO: Add authentication check
-    const isAuthenticated = false
+    const { user, loading, signOut } = useAuth()
 
-    if (!isAuthenticated) {
-        // For now, redirect to home page if not authenticated
+    // Show loading state
+    if (loading) {
+        return (
+            <div className="min-h-screen flex items-center justify-center">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+            </div>
+        )
+    }
+
+    // Redirect if not authenticated
+    if (!user) {
         return <Navigate to="/" replace />
+    }
+
+    const handleSignOut = async () => {
+        await signOut()
     }
 
     return (
@@ -21,7 +36,19 @@ export const AppLayout: FC<AppLayoutProps> = () => {
                 <div className="container mx-auto px-4 py-4">
                     <nav className="flex items-center justify-between">
                         <div className="text-xl font-semibold">Melody Manager</div>
-                        {/* Navigation will go here */}
+                        <div className="flex items-center gap-4">
+                            <span className="text-sm text-muted-foreground">
+                                {user.email}
+                            </span>
+                            <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={handleSignOut}
+                            >
+                                <LogOut className="h-4 w-4 mr-2" />
+                                Sign out
+                            </Button>
+                        </div>
                     </nav>
                 </div>
             </header>
