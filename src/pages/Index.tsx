@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
@@ -11,7 +12,7 @@ export default function Index() {
     try {
       const { error } = await supabase.auth.signOut();
       if (error) throw error;
-      navigate("/auth");
+      navigate("/");
     } catch (error: any) {
       toast({
         title: "Error",
